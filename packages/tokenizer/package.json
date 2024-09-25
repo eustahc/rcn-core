@@ -1,0 +1,23 @@
+{
+  "name": "@rcn-core/tokenizer",
+  "version": "1.0.0",
+  "description": "A JWT-based tokenizer library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@rcn-core/tokenizer": "file:",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
