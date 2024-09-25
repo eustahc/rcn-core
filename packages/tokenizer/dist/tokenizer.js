@@ -9,11 +9,9 @@ class Tokenizer {
     constructor(secret) {
         this.secret = secret;
     }
-    // Method to create a token
     createToken(payload, options) {
         return jsonwebtoken_1.default.sign(payload, this.secret, options);
     }
-    // Method to verify a token
     verifyToken(token) {
         try {
             return jsonwebtoken_1.default.verify(token, this.secret);
@@ -22,7 +20,6 @@ class Tokenizer {
             throw new Error("Invalid token");
         }
     }
-    // Method to set a new secret
     setSecret(newSecret) {
         this.secret = newSecret;
     }
