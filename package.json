@@ -2,8 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build": "npx lerna run build",
-    "push": "npx lerna publish"
+    "package:create": "npx lerna create",
+    "package:build": "npx lerna run build",
+    "package:push": "npx lerna publish"
   },
   "workspaces": [
     "packages/*"

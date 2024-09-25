@@ -1,0 +1,34 @@
+{
+  "name": "hyperion",
+  "version": "1.0.1",
+  "description": "Hyperion is one of RCN utility tool to perform health check to corporate websites.",
+  "keywords": [
+    "Hyperion",
+    "Healthcheck",
+    "Utility"
+  ],
+  "author": "Harold <75729237+surelle-ha@users.noreply.github.com>",
+  "homepage": "https://github.com/eustahc/rcn-core#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "src/hyperion.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eustahc/rcn-core.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/hyperion.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/eustahc/rcn-core/issues"
+  },
+  "dependencies": {
+    "hyperion": "file:"
+  }
+}
